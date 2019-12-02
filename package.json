@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/wardDes/electron-quick-start",
   "keywords": [
     "Electron",
     "quick",
@@ -15,7 +15,7 @@
     "demo"
   ],
   "author": "GitHub",
-  "license": "CC0-1.0",
+  "license": "Creative Commons",
   "devDependencies": {
     "electron": "^7.1.2"
   }
