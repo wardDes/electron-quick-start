@@ -8,7 +8,13 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
+  /*
+    Added show and backgroundColor props to 
+    Browser window
+  */
   mainWindow = new BrowserWindow({
+    show: false,
+    backgroundColor: '#FFF',
     width: 800,
     height: 600,
     webPreferences: {
@@ -21,6 +27,11 @@ function createWindow () {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+
+  // Wait for 'ready-to-show' to display our window
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
+  })
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
