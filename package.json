@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "browser-window-sample",
+  "version": "0.0.1",
+  "description": "A sample Electron application to demonstrate BrowserWindow creation",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -9,12 +9,10 @@
   "repository": "https://github.com/wardDes/electron-quick-start",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "BrowserWindow",
+    "sample"
   ],
-  "author": "GitHub",
+  "author": "wardDes",
   "license": "Creative Commons",
   "devDependencies": {
     "electron": "^7.1.2"
