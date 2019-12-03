@@ -13,14 +13,27 @@ function createWindow () {
     Browser window
   */
   mainWindow = new BrowserWindow({
-    show: false,
-    backgroundColor: '#FFF',
-    width: 800,
-    height: 600,
+    show: false,// DEFAULT: true
+    // need to clear background to make transparent window
+    //backgroundColor: '#FFF',// DEFAULT: '#FFF'
+    width: 800,// DEFAULT: 800
+    height: 600,// DEFAULT: 600
+    minWidth: 800,// DEFAULT: 0
+    maxWidth: 1024,// DEFAULT: UNLIMITED
+    minHeight: 600,// DEFAULT: 0
+    maxHeight: 768,// DEFAULT: UNLIMITED
+    resizable: true,// DEFAULT: true
+    movable: true,// DEFAULT: true
+    alwaysOnTop: false,// DEFAULT: false
+    //title: "Goodybe, Moon?", // DEFAULT: f"Electron"
+    frame: true, // DEFAULT: true
+    //: 'hidden-inset', // DEFAULT: 'default', FOR MACS ONLY
+    transparent: true, // DEFAULT: false,  on Windows OS ONLY IF FRAME SET TO false
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
+
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
